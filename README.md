@@ -34,3 +34,25 @@ pip install -r requirements.txt
 4. define logger (**The Logging** is a means of tracking events that happen when some software runs)
 
 5. define utils (**The utils.py** makes it easy to execute common tasks in Python scripts)
+
+6. run a notebook in google colab for experiment purpose and download it to "notebooks/" dir
+
+
+
+7. ####################Data Ingestion##########################
+
+Note: Data ingestion is the process of importing large, assorted data files from multiple sources into a single, cloud-based storage medium.
+
+define config/config.yaml --> define constants/init.py --> and create 01_data_ingestion.ipynb and run it
+
+define entity/init.py --> define /config/configuration.py --> define components/data_ingestion.py --> define pipeline --> and dvc.yaml --> finally run the dvc pipeline
+
+8. ####################Data Validation##########################
+
+Note: Data validation is the process of ensuring data has undergone data cleansing to confirm they have data quality, that is, that they are both correct and useful.
+
+define config/config.yaml --> and create 02_data_validation.ipynb and run it
+
+define entity/init.py --> define /config/configuration.py --> define components/data_validation.py --> define pipeline --> define dvc.yaml and run
+
+

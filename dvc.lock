@@ -1,0 +1,43 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python3 src/textSummarizer/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: src/textSummarizer/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 34bc7a8aaadd4c0927f68249b461043d
+      size: 848
+    outs:
+    - path: artifacts/data_ingestion/data.zip
+      hash: md5
+      md5: 8e8de8d8666735de004076151c68cd8d
+      size: 7903594
+    - path: artifacts/data_ingestion/samsum-test.csv
+      hash: md5
+      md5: 87a86f987a8f1fcd6610acc0489a70e8
+      size: 530165
+    - path: artifacts/data_ingestion/samsum-train.csv
+      hash: md5
+      md5: 8f677fa29e4e7e6e3538330774984769
+      size: 9401418
+    - path: artifacts/data_ingestion/samsum-validation.csv
+      hash: md5
+      md5: f983bdb3f47b5bfa0a292fd3ecd0390f
+      size: 512131
+    - path: artifacts/data_ingestion/samsum_dataset
+      hash: md5
+      md5: 6955b4ac7cb77d44b1510853b6e4f753.dir
+      size: 10542802
+      nfiles: 10
+  data_validation:
+    cmd: python3 src/textSummarizer/pipeline/stage_02_data_validation.py
+    deps:
+    - path: src/textSummarizer/pipeline/stage_02_data_validation.py
+      hash: md5
+      md5: fbb24e2b0a05c7c28a2db6c67a6af1cd
+      size: 828
+    outs:
+    - path: artifacts/data_validation/status.txt
+      hash: md5
+      md5: 86e6a2f694c57a675b3e2da6b95ff9ba
+      size: 23

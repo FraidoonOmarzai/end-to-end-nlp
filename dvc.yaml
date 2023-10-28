@@ -1,0 +1,18 @@
+stages:
+  data_ingestion:
+    cmd: python3 src/textSummarizer/pipeline/stage_01_data_ingestion.py
+    deps:
+      - src/textSummarizer/pipeline/stage_01_data_ingestion.py
+    outs:
+      - artifacts/data_ingestion/data.zip
+      - artifacts/data_ingestion/samsum_dataset
+      - artifacts/data_ingestion/samsum-test.csv
+      - artifacts/data_ingestion/samsum-train.csv
+      - artifacts/data_ingestion/samsum-validation.csv
+
+  data_validation:
+    cmd: python3 src/textSummarizer/pipeline/stage_02_data_validation.py
+    deps:
+      - src/textSummarizer/pipeline/stage_02_data_validation.py
+    outs:
+      - artifacts/data_validation/status.txt
