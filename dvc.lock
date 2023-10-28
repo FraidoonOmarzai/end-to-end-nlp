@@ -41,3 +41,21 @@ stages:
       hash: md5
       md5: 86e6a2f694c57a675b3e2da6b95ff9ba
       size: 23
+  data_transformation:
+    cmd: python3 src/textSummarizer/pipeline/stage_03_data_transformation.py
+    deps:
+    - path: artifacts/data_ingestion/samsum_dataset
+      hash: md5
+      md5: db1c59b7060840191451c0132badb104.dir
+      size: 35534058
+      nfiles: 13
+    - path: src/textSummarizer/pipeline/stage_03_data_transformation.py
+      hash: md5
+      md5: 3cb1928143c090897147685611c576f5
+      size: 875
+    outs:
+    - path: artifacts/data_transformation/samsum_dataset
+      hash: md5
+      md5: 671cc82f81df325cd16843bbd8c843bc.dir
+      size: 24998116
+      nfiles: 10

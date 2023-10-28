@@ -55,4 +55,10 @@ define config/config.yaml --> and create 02_data_validation.ipynb and run it
 
 define entity/init.py --> define /config/configuration.py --> define components/data_validation.py --> define pipeline --> define dvc.yaml and run
 
+9. ####################Data Transformation##########################
 
+Note: Data transformation means taking data stored in one format and converting it to another
+
+define config/config.yaml --> and create 03_data_transformation.ipynb and run it
+
+define entity/init.py --> define /config/configuration.py --> define components/data_transformation.py --> define pipeline --> define and run dvc.yaml

@@ -15,3 +15,10 @@ class DataValidationConfig:
     root_dir: Path
     STATUS: str
     ALL_FILES: list
+
+
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    tokenizer_name: Path
