@@ -39,26 +39,33 @@ pip install -r requirements.txt
 
 
 
-7. ####################Data Ingestion##########################
+7. ####################**Data Ingestion**##########################
 
-Note: Data ingestion is the process of importing large, assorted data files from multiple sources into a single, cloud-based storage medium.
+**Note:** Data ingestion is the process of importing large, assorted data files from multiple sources into a single, cloud-based storage medium.
 
-define config/config.yaml --> define constants/init.py --> and create 01_data_ingestion.ipynb and run it
+* define config/config.yaml --> define constants/init.py --> and create 01_data_ingestion.ipynb and run it
 
-define entity/init.py --> define /config/configuration.py --> define components/data_ingestion.py --> define pipeline --> and dvc.yaml --> finally run the dvc pipeline
+* define entity/init.py --> define /config/configuration.py --> define components/data_ingestion.py --> define pipeline --> and dvc.yaml --> finally run the dvc pipeline
 
-8. ####################Data Validation##########################
+8. ####################**Data Validation**##########################
 
-Note: Data validation is the process of ensuring data has undergone data cleansing to confirm they have data quality, that is, that they are both correct and useful.
+**Note:** Data validation is the process of ensuring data has undergone data cleansing to confirm they have data quality, that is, that they are both correct and useful.
 
-define config/config.yaml --> and create 02_data_validation.ipynb and run it
+* define config/config.yaml --> and create 02_data_validation.ipynb and run it
 
-define entity/init.py --> define /config/configuration.py --> define components/data_validation.py --> define pipeline --> define dvc.yaml and run
+* define entity/init.py --> define /config/configuration.py --> define components/data_validation.py --> define pipeline --> define dvc.yaml and run
 
-9. ####################Data Transformation##########################
+9. ####################**Data Transformation**##########################
 
-Note: Data transformation means taking data stored in one format and converting it to another
+**Note:** Data transformation means taking data stored in one format and converting it to another
 
-define config/config.yaml --> and create 03_data_transformation.ipynb and run it
+* define config/config.yaml --> and create 03_data_transformation.ipynb and run it
 
-define entity/init.py --> define /config/configuration.py --> define components/data_transformation.py --> define pipeline --> define and run dvc.yaml
+* define entity/init.py --> define /config/configuration.py --> define components/data_transformation.py --> define pipeline --> define and run dvc.yaml
+
+
+10. ####################**Model Training**##########################
+
+* define config/config.yaml --> define params.yaml --> and create 04_model_training.ipynb and run it
+
+* define entity/init.py --> define /config/configuration.py --> define components/model_training.py --> define pipeline --> define and run dvc.yaml

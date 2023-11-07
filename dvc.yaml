@@ -24,3 +24,11 @@ stages:
       - artifacts/data_ingestion/samsum_dataset
     outs:
       - artifacts/data_transformation/samsum_dataset
+
+  model_training:
+    cmd: python3 src/textSummarizer/pipeline/stage_04_model_training.py
+    deps:
+      - src/textSummarizer/pipeline/stage_04_model_training.py
+      - artifacts/data_ingestion/samsum_dataset
+    outs:
+      - artifacts/model_train
